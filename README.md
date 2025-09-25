@@ -75,15 +75,10 @@ what is your request?
 Choose a menu by entering its number. For example:
 
 - Enter 1 → arithmetic operations
-
 - Enter 2 → area/perimeter/volume
-
 - Enter 3 → BMI calculator
-
 - Enter 4 → length conversion
-
 - Enter 5 → view or manage history
-
 - Enter 0 → exit program
 
 ## Examples
@@ -93,12 +88,72 @@ Choose a menu by entering its number. For example:
   enter your second number: 7
      5 + 7 = 12
 ```
+2. BMI calculation:
+```text
+  enter your weight: 70
+  enter your height: 1.75
+  22.86
+  normal
+```
+3. Length conversion:
+```text
+  how many kilometer? 5
+  convert to centimeter: 500000
+  convert to meter: 5000
+  convert to millimeter: 5000000
+  convert to mile: 3.1068559611866697
+```
 
+---
 
+## Project Structure
+```text
+  CALCULATOR.py      # Main program (all menus and functions)
+  history.db         # SQLite database (auto-created)
+```
 
+Main sections inside CALCULATOR.py:
+
+- Terminal utilities (clear screen, loading)
+- Arithmetic operations
+- Length conversions
+- BMI calculation
+- Area, perimeter, and volume functions
+- SQLite history functions
+- Menus (operation, BMI, area/perimeter/volume, history, length)
+- Main calculator() loop
+
+---
+
+## Database & History
+
+All calculations are stored in SQLite (history.db).
+
+Tables:
+- operation_history
+- a_history (areas)
+- p_history (perimeters)
+- volume_history (volumes)
+
+You can display or delete history using the History Menu.
+
+---
+
+## Development
+
+- Written in pure Python.
+- Follows functional programming style.
+- Contributions welcome — feel free to fork and submit PRs!
+
+---
+## License
+
+This project is licensed under the MIT License.
+
+---
 
 ## Installation
 Clone the repository and run the calculator directly:
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/pooyansaeedinia/smart-calculator.git
