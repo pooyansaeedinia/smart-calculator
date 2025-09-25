@@ -58,6 +58,15 @@ No external dependencies required.
 
 ---
 
+## Installation
+Clone the repository and run the calculator directly:
+
+```bash
+git clone https://github.com/pooyansaeedinia/smart-calculator.git
+```
+
+----
+
 ## Usage
 When you run the program, you’ll see a **home menu** with options:
 
@@ -149,11 +158,3 @@ You can display or delete history using the History Menu.
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-## Installation
-Clone the repository and run the calculator directly:
-
-```bash
-git clone https://github.com/pooyansaeedinia/smart-calculator.git
